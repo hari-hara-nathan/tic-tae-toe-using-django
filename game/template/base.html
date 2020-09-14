@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tic tae toe</title>
+    <link rel="stylesheet" type='text/css' href="{% static 'css/base.css' %}">
+</head>
+<body>
+<table><tr>
+    {% for cell in board %}
+        {% if forloop.counter == 4 or forloop.counter == 7 %}
+            </tr><tr>
+        {% endif %}
+        {% if cell == '-' and game_still_going %}
+            <td><a href='playgame/{{forloop.counter}}' ><div>{{cell}}</div></a></td>
+        {% else %}
+            <td>{{cell}}</td>
+        {% endif %}
+    {% endfor %}
+</table>
+{% if game_still_going %}
+    <h2>{{player}}'s turn</h2>
+{% elif winner == 'X' or winner == 'O' %}
+    <h2>{{winner}} won the match</h2>
+    <a href="playagain"><button>play again</button></a>
+{% else %}
+    <h2>match tie</h2>
+    <a href="playagain"><button>play again</button></a>
+{% endif %}
+</body>
+</html>
