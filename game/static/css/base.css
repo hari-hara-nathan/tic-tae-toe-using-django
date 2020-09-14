@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+    background: #0080ff;
+    font-family: sans-serif;
+}
+
+table{
+    width: 500px;
+    heigth: 500px;
+    margin-left: 350px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 6.9em;
+    color: #fff;
+    border:18px solid black;
+    border-radius: 3px;
+    background: #66a3ff;
+}
+td{
+    border-bottom: 8px solid black;
+    border-right: 8px solid black;
+    border-radius: 10px;
+    background-color:red;
+    width : 120px;
+    height : 120px;
+}
+td:hover {
+    width : 100px;
+    height : 100px;
+    border-radius: 10px;
+    border-bottom: 8px solid black;
+    border-right: 8px solid black;
+    background-color:#ff4000;
+    color:white;
+    border-shadow: 3px 3px 10px white
+}
+button{
+    width:15%;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    font-size: 1.5em;
+}
+button:hover {
+    width:15%;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 3px;
+    padding: 5px;
+    border: none;
+    font-size: 1.5em;
+}
+td a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
